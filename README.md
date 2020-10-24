@@ -47,7 +47,7 @@ npx create-react-app myapp  --template cra-template-viya-app-quickstart
 
 The required configurations are explained at this [link](https://github.com/sassoftware/restaf/wiki/usefulTips).
 
-The default clientId information are:
+The default clientId information is:
 
 - Oauth flow: authorization_code
 - clientid: viyaapp
@@ -281,109 +281,26 @@ The src directory has 3 key sbu directories
 yarn dev and yarn buildapp will scan the viewers and helpers directory and create the indexx.js in each of these directories.
 For every entry in viewers directory the application will create a route that can be referenced in the appMenu.js
 
+---
+
+## Styles
+
+---
+
+Edit defaultStyles.json to set the styles to use with material-ui.
+
+
+---
+
+### TLS
+
+---
+
+Please see the .env file for notes on setting up tls.
+
+
 ## **Conclusion**
 
 That is all there is to adding new application - no wiring of routes, servers, code for authentication etc...
 Use your extra free time doing other interesting stuff.
 
----
-
-## Creating clientids
-
----
-
-Most folks create clientid's using shell scripts run on the Viya server or using POSTMAN scripts. Here is a even simpler way.
-You must have admin privledges. The example below uses the default values for this repo. Feel free to change it to suite your needs.
-
-Step 1: Issue this command in a shell on your local machine
-
-```sh
-npx @sassoftware/registerclient --host=your-viya-server-url
-```
-
-Example:
-
-npx @sassoftware/registerclient --host=<http://mytestserver.com>
-
-Step 2: You will get a prompt on your shell. Enter "logon" as a command. You will be promoted for your userid and password
-
-Step 3: After successful logon enter the following(replace viyademo with the value of webapp)
-
-> add alldemos -t authorization_code -s secret -r <http://localhost:8080/viyademo,https://localhost/viyademo>
-
-Step 4: Enter help to explore other features or enter exit to get out of the application
-
----
-
-## Other information
-
----
-
-## Standard create-react-app Scripts
-
----
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/code-splitting>
-
-### Analyzing the Bundle Size
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size>
-
-### Making a Progressive Web App
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app>
-
-### Advanced Configuration
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/advanced-configuration>
-
-### Deployment
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/deployment>
-
-### `yarn build` fails to minify
-
-This section has moved here: <https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify>
