@@ -1,0 +1,26 @@
+{
+    "name": "cra-template-viya-app-quickstart",
+    "version": "0.1.0",
+    "keywords": [
+        "react",
+        "create-react-app",
+        "template",
+        "viya"
+    ],
+    "descri[ption": "Template for typical SAS Viya Applications",
+    "repository":{
+        "type": "git",
+        "url": "https://github.com/devakumaraswamy/cra-template-viya-app-quickstart"
+    },
+    "license": "Apache-2",
+    "engine": {
+        "node": ">=12"
+    },
+    "bugs": {
+        "url": "https://github.com/devakumaraswamy/cra-template-viya-app-quickstart/issues"
+    },
+    "files": [
+        "template",
+        "template.json"
+    ]
+}
