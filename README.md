@@ -31,11 +31,11 @@ You can replace and/or add other react component libraries.
 Issue these command
 
 ```sh
-npx create-react-app <projectName>  --template cra-template-viya-app-quickstart
+npx create-react-app <projectName>  --template viya-app-quickstart
 
 
 ex:
-npx create-react-app myapp  --template cra-template-viya-app-quickstart
+npx create-react-app myapp  --template viya-app-quickstart
 
 ```
 
